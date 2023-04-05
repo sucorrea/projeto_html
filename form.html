@@ -1,28 +1,103 @@
-
-	
-	<div class="coluna col7 contato ">
-		<h1> FORMUL&Aacute;RIO</h1>	
-						<h2>Envie uma mensagem</h2>
-				<form action=" " >
-					<label for="nome" > Seu Nome: </label>
-					<input id="nome" type="text" name="nome" placeholder="Digite seu nome" />
-					<label for="endereço" > Endereço: </label>
-					<input id="endereço" type="text" placeholder="Digite seu endereço" />
-					<label for="Cidade" > Cidade/Estado: </label>
-					<input id="Cidade" type="text" placeholder="Digite a cidade" />
-					<label for="Email" > Seu Email: </label>
-					<input id="Email" type="text" name="email" placeholder="Digite um email" />
-					<label for="Cel" > Celular: </label>
-					<input id="Cel" type="text" placeholder="Digite um numero celular" />
-					<label for="cpf"> CPF: </label>
-					<input id="cpf" type="text" placeholder="insira seu CPF (somente números)" />
-					<label for="mensagem">Mensagem   </label>
-					<textarea name="mensagem" id="mensagem"> </textarea>
-					<input type="submit" class="botao" name="Enviar" value="Enviar mensagem &raquo;" /> 
-				</form>	
-			</div>
-		</section>
-	</div>
-	
-</body>
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu" target="menu-frame">
+        <table class="table-menu" style="width: 100%">
+          <thead>
+            <tr>
+              <th colspan="7" class="titulo espacamento-titulo">
+                Projeto 1 – HTML/CSS
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <nav>
+              <tr class="item-tabela">
+                <td width="10%">&nbsp;</td>
+                <td><a href="entrada.html">Entrada </a></td>
+                <td><a href="ancora2.html">Âncora</a></td>
+                <td><a href="form.html">Formulário</a></td>
+                <td>
+                  <a href="relatorio.html">Relatório</a>
+                </td>
+                <td>
+                  <button onclick="history.go(-1)" class="button link">
+                    voltar
+                  </button>
+                </td>
+                <td width="10%">&nbsp;</td>
+              </tr>
+            </nav>
+            <tr>
+              <td colspan="7"><hr /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </header>
+    <main>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <em>FORMULÁRIO</em>
+        <form>
+          <table>
+            <tr>
+              <td>
+                <label for="viagem">Viagem</label>
+              </td>
+              <td>
+                <input id="viagem" type="text" placeholder="Digite a Viagem" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="onibus">Ônibus</label>
+              </td>
+              <td>
+                <input
+                  id="onibus"
+                  type="text"
+                  placeholder="Digite o nome do Ônibus"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="rota">Rota</label>
+              </td>
+              <td>
+                <input id="rota" type="text" placeholder="Digite a Rota" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dtviagem">Data da Viagem</label></td>
+              <td><input id="dtviagem" type="date" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="hsaida">Hora de Saída</label>
+              </td>
+              <td><input id="hsaida" type="time" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="dtregistro">Data de Registro</label>
+              </td>
+              <td><input id="dtregistro" type="date" /></td>
+            </tr>
+          </table>
+          <br />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 - FATEC Ourinhos - FM</p>
+    </footer>
+  </body>
 </html>
