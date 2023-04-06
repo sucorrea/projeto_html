@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Projeto 1 – HTML/CSS</title>
-  </head>
-  <body>
-    <div style="background-color: #fff" width="100%" height="100%" >
-      <table style="border: 1px solid #000">
-        <thead>
-          <tr>
-            <th colspan="7" class="titulo espacamento-titulo">
-              <em>RELATÓRIO</em>
-            </th>
-          </tr>
-        </thead>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Projeto 1 – HTML/CSS</title>
+  <style>
+    table,
+    th,
+    thead,
+    tr,
+    td,
+    tbody {
+      border: 1px solid
+    }
+  </style>
+</head>
+
+<body>
+  <div style="background-color: #fff" width="100%" height="100%">
+    <em>RELATÓRIO</em>
+    <table style="border: 1px solid #000">
+      <thead>
         <tr>
-          <td>
-            <label for="viagem">Viagem</label>
-          </td>
-          <td>VIAGEM</td>
+          <th scope="col">CODIGO VIAGEM</th>
+          <th scope="col">NOME VIAGEM</th>
+          <th scope="col">CÓDIGO ONIBUS</th>
+          <th scope="col">NOME ONIBUS</th>
+          <th scope="col">NOME CÓDIGO ROTA</th>
+          <th scope="col">NOME ROTA</th>
+          <th scope="col">DATA VIAGEM</th>
+          <th scope="col">HORA SAÍDA</th>
+          <th scope="col">DATA DO REGISTRO</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <td>
-            <label for="onibus">Ônibus</label>
-          </td>
-          <td>ONIBUS</td>
+          <td>1</td>
+          <td>ASSIS</td>
+          <td>1</td>
+          <td>33123</td>
+          <td>5</td>
+          <td>SÃO PAULO</td>
+          <td>01/01/2010</td>
+          <td>10:00</td>
+          <td>08/01/2005</td>
         </tr>
-        <tr>
-          <td>
-            <label for="rota">Rota</label>
-          </td>
-          <td>ROTA</td>
-        </tr>
-        <tr>
-          <td><label for="dtviagem">Data da Viagem</label></td>
-          <td>DATA</td>
-        </tr>
-        <tr>
-          <td>
-            <label for="hsaida">Hora de Saída</label>
-          </td>
-          <td>HORA SAIDA</td>
-        </tr>
-        <tr>
-          <td>
-            <label for="dtregistro">Data de Registro</label>
-          </td>
-          <td>DATA REGISTRO</td>
-        </tr>
-      </table>
-    </div>
-    <footer>
-      <p>&copy; 2023 - FATEC Ourinhos - FM</p>
-    </footer>
-  </body>
+      </tbody>
+
+    </table>
+  </div>
+  <footer>
+    <p>&copy; 2023 - FATEC Ourinhos - FM</p>
+  </footer>
+</body>
+
 </html>
