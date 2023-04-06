@@ -10,30 +10,42 @@ body {
   background-color: #faf0e6;
   overflow: hidden;
 }
+frame {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  background-color: yellowgreen;
+}
 .menu {
   padding-top: 10px;
   background-color: #ffdead;
   width: 100%;
   min-height: 70px;
 }
-main {
-  height: calc(90% - 70px);
-  padding: 8px 0px 0px 8px;
+
+.ancora{
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
-  display: flex;
-  width: 99%;
-  position: fixed;
+  width: 90%;
+
 }
 .tabela-header {
   margin-top: 10px;
 }
 
 .tabela-footer {
-  display: flex;
+  display: flex ;
   align-items: center;
   padding-top: 10px;
   border: solid;
+}
+.tabela-menu {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-tabela {
@@ -53,15 +65,11 @@ hr {
   border: none;
 }
 
-footer {
+.footer {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   width: 100%;
-  position: fixed;
-  text-align: center;
-  bottom: 0;
-  height: 5%;
 }
 
 em {
@@ -100,4 +108,12 @@ a {
 .espacamento-titulo {
   text-align: center;
   padding: 10px 0px;
+}
+.div-menu {
+  display: flex;
+  padding-top: 2px;
+  width: 100%;
+  background: #ffdead;
+  flex-direction: column-reverse;
+  max-height: 70px;
 }
